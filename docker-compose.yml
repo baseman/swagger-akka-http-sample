@@ -1,0 +1,8 @@
+version: "2"
+services:
+  consumer:
+    image: baseman/consumer
+    container_name: consumer
+    build:
+      context: ./
+      dockerfile: ./consumer/target/docker/0/Dockerfile
